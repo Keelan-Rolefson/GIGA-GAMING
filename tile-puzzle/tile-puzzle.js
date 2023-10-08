@@ -6,12 +6,19 @@ let board = [
     [12, null, 9, 15]
 ]
 
+let currTileID = "";
+let currTileV = "";
+
 const td = document.querySelector("table");
 td.addEventListener('click', e => {
     const { target } = e;
-
-    console.log(target)
-    console.log("balls")
+    currTileID = target.id;
+    console.log(currTileID);
 })
 
-console.log("penis");
+function posCheck() {
+    const u = ;
+    const d = ;
+    const l = ;
+    const r = ;
+}
