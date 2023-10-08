@@ -1,0 +1,11 @@
+
+table {
+    background-color: brown;
+}
+
+td {
+    margin: 2px;
+    width: 25px;
+    height: 25px;
+    outline: 1px black solid;
+}
