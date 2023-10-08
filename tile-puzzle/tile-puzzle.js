@@ -6,10 +6,12 @@ let board = [
     [12, null, 9, 15]
 ]
 
-const td = document.querySelector('td');
+const td = document.querySelector("table");
 td.addEventListener('click', e => {
     const { target } = e;
 
+    console.log(target)
+    console.log("balls")
 })
 
 console.log("penis");
