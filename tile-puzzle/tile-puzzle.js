@@ -14,11 +14,30 @@ td.addEventListener('click', e => {
     const { target } = e;
     currTileID = target.id;
     console.log(currTileID);
+
+    posCheck();
+
 })
 
 function posCheck() {
-    const u = ;
-    const d = ;
-    const l = ;
-    const r = ;
+    let checkUp = "";
+    let posY = Number(currTileID.substring(0,1));
+    let posX = Number(currTileID.substring(2,3));
+
+    if(posY === 0) {
+        checkRight = board[posY][posX + 1];
+        checkDown = board[posY + 1][posX];
+        checkLeft = board[posY][posX - 1];     
+    }
+    else {
+        checkRight = board[posY][posX + 1];
+        checkDown = board[posY + 1][posX];
+        checkLeft = board[posY][posX - 1];
+        checkUp = board[posY - 1][posX];
+    }
 }
+
+// checkUp = board[posY - 1][posX];
+// checkRight = board[posY][posX + 1];
+// checkDown = board[posY + 1][posX];
+// checkLeft = board[posY][posX - 1];
