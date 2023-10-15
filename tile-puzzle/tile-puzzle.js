@@ -25,9 +25,13 @@ td.addEventListener('click', e => {
 
     let blankTilePos = posCheck(posX, posY);
         if (blankTilePos) {
+            //logic board update
             currTileValue = board[posY][posX];
             board[blankTilePos[0]][blankTilePos[1]] = currTileValue;
             board[posY][posX] = null;
+            //display board update
+            let blankTileId = board[blankTilePos[0]] + "-" + [blankTilePos[1]];
+            console.log(blankTileId);
             
         }
     console.log(posCheck(posX, posY));
