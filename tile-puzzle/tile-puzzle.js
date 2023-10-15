@@ -9,7 +9,7 @@ let board = [
 
 // Variables
 let currTileID = "";
-let currTileV = "";
+let currTileValue = "";
 let posX = 0;
 let posY = 0;
 
@@ -23,9 +23,15 @@ td.addEventListener('click', e => {
     posY = Number(currTileID.substring(0,1));
     posX = Number(currTileID.substring(2,3));
 
-    posCheck(posX, posY);
+    let blankTilePos = posCheck(posX, posY);
+        if (blankTilePos) {
+            currTileValue = board[posY][posX];
+            board[blankTilePos[0]][blankTilePos[1]] = currTileValue;
+            board[posY][posX] = null;
+            
+        }
     console.log(posCheck(posX, posY));
-
+    console.log(currTileValue);
 })
 
 // Checking ID's of surrounding tiles, returning position of blank.
