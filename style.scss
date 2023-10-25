@@ -1,0 +1,32 @@
+// Root
+// Colors
+$background: #003049;
+$red: #D62828;
+$orange: #F77F00;
+$yellow: #FCBF49;
+$vanilla: #EAE2B7;
+
+
+body {
+    background-color: $background;
+    width: 100%;
+    margin: 0;
+}
+
+.logo__wrap {
+    .logo__spacer-red {
+        height: 75px;
+        width: 100%;
+        background-color: $red;
+    }
+    .logo__spacer-orange {
+        height: 75px;
+        width: 100%;
+        background-color: $orange;
+    }
+    .logo__spacer-yellow {
+        height: 75px;
+        width: 100%;
+        background-color: $yellow;
+    }
+}   

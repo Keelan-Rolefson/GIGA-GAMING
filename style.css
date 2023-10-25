@@ -1,0 +1,23 @@
+body {
+  background-color: #003049;
+  width: 100%;
+  margin: 0;
+}
+
+.logo__wrap .logo__spacer-red {
+  height: 75px;
+  width: 100%;
+  background-color: #D62828;
+}
+.logo__wrap .logo__spacer-orange {
+  height: 75px;
+  width: 100%;
+  background-color: #F77F00;
+}
+.logo__wrap .logo__spacer-yellow {
+  height: 75px;
+  width: 100%;
+  background-color: #FCBF49;
+}
+
+/*# sourceMappingURL=style.css.map */
