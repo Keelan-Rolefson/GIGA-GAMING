@@ -4,20 +4,60 @@ body {
   margin: 0;
 }
 
-.logo__wrap .logo__spacer-red {
-  height: 75px;
+.header__wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-bottom: black 10px solid;
+}
+.header__wrap .header__spacer-red,
+.header__wrap .header__spacer-orange,
+.header__wrap .header__spacer-yellow,
+.header__wrap .header__spacer-blue {
+  height: 55px;
   width: 100%;
+}
+.header__wrap .header__spacer-red {
   background-color: #D62828;
 }
-.logo__wrap .logo__spacer-orange {
-  height: 75px;
-  width: 100%;
+.header__wrap .header__spacer-orange {
   background-color: #F77F00;
 }
-.logo__wrap .logo__spacer-yellow {
-  height: 75px;
-  width: 100%;
+.header__wrap .header__spacer-yellow {
   background-color: #FCBF49;
+}
+.header__wrap .header__spacer-blue {
+  background-color: #003049;
+}
+
+.logo__wrap {
+  width: 100%;
+  position: absolute;
+  top: 45px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.logo__wrap .logo__container {
+  width: 320px;
+  height: 165px;
+  border: black 10px solid;
+  border-radius: 5px;
+}
+.logo__wrap .logo__logo {
+  font-size: 72px;
+}
+
+.banner_wrap {
+  width: 1080px;
+  height: 720px;
+}
+.banner_wrap .banner__container {
+  border: black 10px solid;
+  border-radius: 5px;
+}
+.banner_wrap .banner__img {
+  background-image: url(assets/images/C&C.jpg);
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -13,20 +13,68 @@ body {
     margin: 0;
 }
 
-.logo__wrap {
-    .logo__spacer-red {
-        height: 75px;
+.header__wrap {
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-bottom: black 10px solid;
+
+    .header__spacer-container {
+
+    }
+    .header__spacer-red,
+    .header__spacer-orange,
+    .header__spacer-yellow,
+    .header__spacer-blue {
+        height: 55px;
         width: 100%;
+    }
+    .header__spacer-red {
         background-color: $red;
     }
-    .logo__spacer-orange {
-        height: 75px;
-        width: 100%;
+    .header__spacer-orange {
         background-color: $orange;
     }
-    .logo__spacer-yellow {
-        height: 75px;
-        width: 100%;
+    .header__spacer-yellow {
         background-color: $yellow;
     }
-}   
+    .header__spacer-blue {
+        background-color: $background;
+    }
+
+
+
+}  
+
+.logo__wrap {
+        width: 100%;
+        position: absolute;
+        top: 45px;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+
+    .logo__container {
+        width: 320px;
+        height: 165px;
+        border: black 10px solid;
+        border-radius: 5px;
+    }
+    .logo__logo {
+        font-size: 72px;
+    }
+}
+
+.banner_wrap {
+        width: 1080px;
+        height: 720px;
+ 
+    .banner__container {
+       border: black 10px solid;
+        border-radius: 5px;
+    }
+    .banner__img {
+        background-image: url(assets/images/C&C.jpg);
+    }
+}
