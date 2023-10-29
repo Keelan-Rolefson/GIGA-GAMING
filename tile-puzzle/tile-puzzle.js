@@ -30,9 +30,10 @@ td.addEventListener('click', e => {
             board[blankTilePos[0]][blankTilePos[1]] = currTileValue;
             board[posY][posX] = null;
             //display board update
-            let blankTileId = blankTilePos[0] + "-" + blankTilePos[1];
-            console.log(blankTileId);
-            
+            let blankTileID = blankTilePos[0] + "-" + blankTilePos[1];
+            console.log(blankTileID);
+            document.getElementById(blankTileID).textContent = currTileValue;
+            document.getElementById(currTileID).textContent = "";
         }
     console.log(posCheck(posX, posY));
     console.log(currTileValue);
